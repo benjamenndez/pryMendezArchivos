@@ -21,5 +21,14 @@ namespace pryMendezArchivos
         {
             x.Listar(dgvClientes);
         }
+
+        private void btnOrdenar_Click(object sender, EventArgs e)
+        {
+            x.OrdenarArchivo();
+            MessageBox.Show("Archivo Ordenado");
+            x.Listar(dgvClientes);
+
+
+        }
     }
 }
