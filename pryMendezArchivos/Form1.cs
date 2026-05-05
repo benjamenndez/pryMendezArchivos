@@ -60,8 +60,19 @@ namespace pryMendezArchivos
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
-            x.Grabar(txtCodigo.Text, txtNombreApellido.Text, txtDeuda.Text, txtLimiteCredito.Text);
-            MessageBox.Show("Datos Grabados");
+            if (x.ExisteCodigo(txtCodigo.Text))
+            {
+                MessageBox.Show("El código ingresado ya pertenece a otro cliente.", "Código Duplicado",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCodigo.Focus(); // Pone el cursor en el error
+                txtCodigo.SelectAll();
+            }
+            else
+            {
+                x.Grabar(txtCodigo.Text, lblNombreYApellido.Text, txtDeuda.Text, lblLimite.Text);
+                MessageBox.Show("Los datos se grabaron correctamente", "Datos cargados",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
             txtCodigo.Text = "";
             txtNombreApellido.Text = "";

@@ -53,6 +53,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcercaDe.Designer.cs">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeudores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeudores.Designer.cs">
+      <DependentUpon>frmDeudores.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListadoCLientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +81,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcercaDe.resx">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeudores.resx">
+      <DependentUpon>frmDeudores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListadoCLientes.resx">
       <DependentUpon>frmListadoCLientes.cs</DependentUpon>
@@ -101,6 +119,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\e8f4e1b98772d7bc2c5615e7563a306f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yhoo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth-4k-best-desktop-download-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4k-black-hole-minimalistic-wallpaper.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

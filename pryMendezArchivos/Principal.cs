@@ -33,5 +33,27 @@ namespace pryMendezArchivos
             frmListadoCLientes v = new frmListadoCLientes();
             v.ShowDialog();
         }
+
+        private void listadoDeClientesDeudoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form v = new frmDeudores();
+            v.ShowDialog();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void acercaDelDesarrolladorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form v = new frmAcercaDe();
+            v.ShowDialog();
+        }
+
+        private void listadoDeClientesOrdenadosPorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

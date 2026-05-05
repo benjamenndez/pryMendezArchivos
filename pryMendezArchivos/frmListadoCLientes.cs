@@ -20,15 +20,26 @@ namespace pryMendezArchivos
         private void frmListadoCLientes_Load(object sender, EventArgs e)
         {
             x.Listar(dgvClientes);
+            TotalDeuda.Text = "$" + x.TotalDeuda().ToString();
+            CantidadCLientes.Text = x.CantClientes().ToString();
+            PromedioDeuda.Text = "$" + x.Promedio().ToString();
         }
 
         private void btnOrdenar_Click(object sender, EventArgs e)
         {
             x.OrdenarArchivo();
-            MessageBox.Show("Archivo Ordenado");
             x.Listar(dgvClientes);
+            MessageBox.Show("El reporte se ha ordenado", "Archivo Ordenado",
+            MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            x.GenerarReporte();
+            MessageBox.Show("El reporte ha sido realizado", "Reporte Generado",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
