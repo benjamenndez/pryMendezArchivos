@@ -160,7 +160,8 @@
             this.ClientSize = new System.Drawing.Size(515, 399);
             this.Controls.Add(this.gpbConsultaDatos);
             this.Name = "frmDeudores";
-            this.Text = "frmDeudores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Clientes Deudores";
             this.Load += new System.EventHandler(this.frmDeudores_Load);
             this.gpbConsultaDatos.ResumeLayout(false);
             this.gpbConsultaDatos.PerformLayout();

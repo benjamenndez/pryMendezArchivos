@@ -84,6 +84,7 @@
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
             this.txtCodigo.TabIndex = 4;
             this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
+            this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
             // 
             // txtDeuda
             // 
@@ -92,6 +93,7 @@
             this.txtDeuda.Size = new System.Drawing.Size(100, 20);
             this.txtDeuda.TabIndex = 5;
             this.txtDeuda.TextChanged += new System.EventHandler(this.txtDeuda_TextChanged);
+            this.txtDeuda.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDeuda_KeyPress);
             // 
             // txtNombreApellido
             // 
@@ -108,6 +110,7 @@
             this.txtLimiteCredito.Size = new System.Drawing.Size(127, 20);
             this.txtLimiteCredito.TabIndex = 7;
             this.txtLimiteCredito.TextChanged += new System.EventHandler(this.txtLimiteCredito_TextChanged);
+            this.txtLimiteCredito.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLimiteCredito_KeyPress);
             // 
             // gpbCarga
             // 
@@ -146,7 +149,7 @@
             this.Controls.Add(this.gpbCarga);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmCargarClientes";
+            this.Text = "Cargar Clientes";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gpbCarga.ResumeLayout(false);
             this.gpbCarga.PerformLayout();
